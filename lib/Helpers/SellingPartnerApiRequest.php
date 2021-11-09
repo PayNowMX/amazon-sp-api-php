@@ -3,8 +3,10 @@
 namespace ClouSale\AmazonSellingPartnerAPI\Helpers;
 
 use ClouSale\AmazonSellingPartnerAPI\ApiException;
+use ClouSale\AmazonSellingPartnerAPI\HeaderSelector;
 use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
 use ClouSale\AmazonSellingPartnerAPI\Signature;
+use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Query;
@@ -205,4 +207,28 @@ trait SellingPartnerApiRequest
                 }
             );
     }
+
+    /**
+     * Set HTTP client.
+     * @param $client
+     * @return void
+     */
+    private function setClient($client)
+    {
+        $this->client = $client;
+    }
+
+    /**
+     * Set handler.
+     * @param $handler
+     * @return void
+     */
+    public function setHandler($handler)
+    {
+        $client = new Client([
+            'handler' => $handler
+        ]);
+        $this->setClient($client);
+    }
+
 }
