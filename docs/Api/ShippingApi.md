@@ -50,7 +50,8 @@ try {
     $result = $apiInstance->cancelShipment($shipment_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ShippingApi->cancelShipment: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -112,7 +113,8 @@ try {
     $result = $apiInstance->createShipment($body);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ShippingApi->createShipment: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -173,7 +175,8 @@ try {
     $result = $apiInstance->getAccount();
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ShippingApi->getAccount: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -232,7 +235,8 @@ try {
     $result = $apiInstance->getRates($body);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ShippingApi->getRates: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -294,7 +298,8 @@ try {
     $result = $apiInstance->getShipment($shipment_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ShippingApi->getShipment: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -356,7 +361,8 @@ try {
     $result = $apiInstance->getTrackingInformation($tracking_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ShippingApi->getTrackingInformation: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -419,7 +425,8 @@ try {
     $result = $apiInstance->purchaseLabels($body, $shipment_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ShippingApi->purchaseLabels: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -482,7 +489,8 @@ try {
     $result = $apiInstance->purchaseShipment($body);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ShippingApi->purchaseShipment: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -546,7 +554,8 @@ try {
     $result = $apiInstance->retrieveShippingLabel($body, $shipment_id, $tracking_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ShippingApi->retrieveShippingLabel: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```

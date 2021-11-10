@@ -4,15 +4,15 @@ All URIs are relative to *https://sellingpartnerapi-na.amazon.com/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getMyFeesEstimateForASIN**](FeesApi.md#getmyfeesestimateforasin) | **POST** /products/fees/v0/items/{Asin}/feesEstimate | 
-[**getMyFeesEstimateForSKU**](FeesApi.md#getmyfeesestimateforsku) | **POST** /products/fees/v0/listings/{SellerSKU}/feesEstimate | 
+[**getMyFeesEstimateForASIN**](FeesApi.md#getmyfeesestimateforasin) | **POST** /products/fees/v0/items/{Asin}/feesEstimate |
+[**getMyFeesEstimateForSKU**](FeesApi.md#getmyfeesestimateforsku) | **POST** /products/fees/v0/listings/{SellerSKU}/feesEstimate |
 
 # **getMyFeesEstimateForASIN**
 > \Swagger\Client\Models\GetMyFeesEstimateResponse getMyFeesEstimateForASIN($body, $asin)
 
 
 
-Returns the estimated fees for the item indicated by the specified Asin in the marketplace specified in the request body.  You can call getMyFeesEstimateForASIN for an item on behalf of a seller before the seller sets the item's price. They can then take estimated fees into account. With each product fees request, you must include an original identifier. This identifier is included in the fees estimate so you can correlate a fees estimate with the original request.  
+Returns the estimated fees for the item indicated by the specified Asin in the marketplace specified in the request body.  You can call getMyFeesEstimateForASIN for an item on behalf of a seller before the seller sets the item's price. They can then take estimated fees into account. With each product fees request, you must include an original identifier. This identifier is included in the fees estimate so you can correlate a fees estimate with the original request.
 
 **Usage Plan:**
 
@@ -44,7 +44,8 @@ try {
     $result = $apiInstance->getMyFeesEstimateForASIN($body, $asin);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling FeesApi->getMyFeesEstimateForASIN: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -53,8 +54,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Models\GetMyFeesEstimateRequest**](../Model/GetMyFeesEstimateRequest.md)|  |
- **asin** | **string**| The Amazon Standard Identification Number (ASIN) of the item. |
+**body** | [**\Swagger\Client\Models\GetMyFeesEstimateRequest**](../Model/GetMyFeesEstimateRequest.md)|  |
+**asin** | **string**| The Amazon Standard Identification Number (ASIN) of the item. |
 
 ### Return type
 
@@ -66,8 +67,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
@@ -76,7 +77,7 @@ No authorization required
 
 
 
-Returns the estimated fees for the item indicated by the specified seller SKU in the marketplace specified in the request body.  You can call getMyFeesEstimateForSKU for an item on behalf of a seller before the seller sets the item's price. They can then take estimated fees into account. With each fees estimate request, you must include an original identifier. This identifier is included in the fees estimate so you can correlate a fees estimate with the original request.  
+Returns the estimated fees for the item indicated by the specified seller SKU in the marketplace specified in the request body.  You can call getMyFeesEstimateForSKU for an item on behalf of a seller before the seller sets the item's price. They can then take estimated fees into account. With each fees estimate request, you must include an original identifier. This identifier is included in the fees estimate so you can correlate a fees estimate with the original request.
 
 **Usage Plan:**
 
@@ -108,7 +109,8 @@ try {
     $result = $apiInstance->getMyFeesEstimateForSKU($body, $seller_sku);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling FeesApi->getMyFeesEstimateForSKU: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -117,8 +119,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Models\GetMyFeesEstimateRequest**](../Model/GetMyFeesEstimateRequest.md)|  |
- **seller_sku** | **string**| Used to identify an item in the given marketplace. SellerSKU is qualified by the seller&#x27;s SellerId, which is included with every operation that you submit. |
+**body** | [**\Swagger\Client\Models\GetMyFeesEstimateRequest**](../Model/GetMyFeesEstimateRequest.md)|  |
+**seller_sku** | **string**| Used to identify an item in the given marketplace. SellerSKU is qualified by the seller&#x27;s SellerId, which is included with every operation that you submit. |
 
 ### Return type
 
@@ -130,8 +132,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

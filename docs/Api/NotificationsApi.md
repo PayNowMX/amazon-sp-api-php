@@ -49,7 +49,8 @@ try {
     $result = $apiInstance->createDestination($body);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling NotificationsApi->createDestination: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -112,7 +113,8 @@ try {
     $result = $apiInstance->createSubscription($body, $notification_type);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling NotificationsApi->createSubscription: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -175,7 +177,8 @@ try {
     $result = $apiInstance->deleteDestination($destination_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling NotificationsApi->deleteDestination: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -238,7 +241,8 @@ try {
     $result = $apiInstance->deleteSubscriptionById($subscription_id, $notification_type);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling NotificationsApi->deleteSubscriptionById: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -301,7 +305,8 @@ try {
     $result = $apiInstance->getDestination($destination_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling NotificationsApi->getDestination: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -362,7 +367,8 @@ try {
     $result = $apiInstance->getDestinations();
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling NotificationsApi->getDestinations: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -421,7 +427,8 @@ try {
     $result = $apiInstance->getSubscription($notification_type);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling NotificationsApi->getSubscription: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -484,7 +491,8 @@ try {
     $result = $apiInstance->getSubscriptionById($subscription_id, $notification_type);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling NotificationsApi->getSubscriptionById: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```

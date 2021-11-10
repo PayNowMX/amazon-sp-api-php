@@ -44,7 +44,8 @@ try {
     $result = $apiInstance->createProductReviewAndSellerFeedbackSolicitation($amazon_order_id, $marketplace_ids);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling SolicitationsApi->createProductReviewAndSellerFeedbackSolicitation: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -108,7 +109,8 @@ try {
     $result = $apiInstance->getSolicitationActionsForOrder($amazon_order_id, $marketplace_ids);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling SolicitationsApi->getSolicitationActionsForOrder: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```

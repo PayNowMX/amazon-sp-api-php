@@ -47,7 +47,8 @@ try {
     $result = $apiInstance->getOrder($order_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling OrdersV0Api->getOrder: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -110,7 +111,8 @@ try {
     $result = $apiInstance->getOrderAddress($order_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling OrdersV0Api->getOrderAddress: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -173,7 +175,8 @@ try {
     $result = $apiInstance->getOrderBuyerInfo($order_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling OrdersV0Api->getOrderBuyerInfo: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -237,7 +240,8 @@ try {
     $result = $apiInstance->getOrderItems($order_id, $next_token);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling OrdersV0Api->getOrderItems: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -302,7 +306,8 @@ try {
     $result = $apiInstance->getOrderItemsBuyerInfo($order_id, $next_token);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling OrdersV0Api->getOrderItemsBuyerInfo: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -379,7 +384,8 @@ try {
     $result = $apiInstance->getOrders($marketplace_ids, $created_after, $created_before, $last_updated_after, $last_updated_before, $order_statuses, $fulfillment_channels, $payment_methods, $buyer_email, $seller_order_id, $max_results_per_page, $easy_ship_shipment_statuses, $next_token, $amazon_order_ids);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling OrdersV0Api->getOrders: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```

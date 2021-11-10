@@ -49,7 +49,8 @@ try {
     $result = $apiInstance->cancelShipment($shipment_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling MerchantFulfillmentApi->cancelShipment: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -111,7 +112,8 @@ try {
     $result = $apiInstance->cancelShipmentOld($shipment_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling MerchantFulfillmentApi->cancelShipmentOld: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -173,7 +175,8 @@ try {
     $result = $apiInstance->createShipment($body);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling MerchantFulfillmentApi->createShipment: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -235,7 +238,8 @@ try {
     $result = $apiInstance->getAdditionalSellerInputs($body);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling MerchantFulfillmentApi->getAdditionalSellerInputs: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -297,7 +301,8 @@ try {
     $result = $apiInstance->getAdditionalSellerInputsOld($body);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling MerchantFulfillmentApi->getAdditionalSellerInputsOld: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -359,7 +364,8 @@ try {
     $result = $apiInstance->getEligibleShipmentServices($body);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling MerchantFulfillmentApi->getEligibleShipmentServices: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -421,7 +427,8 @@ try {
     $result = $apiInstance->getEligibleShipmentServicesOld($body);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling MerchantFulfillmentApi->getEligibleShipmentServicesOld: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -483,7 +490,8 @@ try {
     $result = $apiInstance->getShipment($shipment_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling MerchantFulfillmentApi->getShipment: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```

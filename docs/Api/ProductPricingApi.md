@@ -48,7 +48,8 @@ try {
     $result = $apiInstance->getCompetitivePricing($marketplace_id, $item_type, $asins, $skus);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ProductPricingApi->getCompetitivePricing: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -115,7 +116,8 @@ try {
     $result = $apiInstance->getItemOffers($marketplace_id, $item_condition, $asin);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ProductPricingApi->getItemOffers: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -181,7 +183,8 @@ try {
     $result = $apiInstance->getListingOffers($marketplace_id, $item_condition, $seller_sku);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ProductPricingApi->getListingOffers: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -249,7 +252,8 @@ try {
     $result = $apiInstance->getPricing($marketplace_id, $item_type, $asins, $skus, $item_condition);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ProductPricingApi->getPricing: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```

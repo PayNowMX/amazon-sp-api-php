@@ -41,7 +41,8 @@ try {
     $result = $apiInstance->getMarketplaceParticipations();
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling SellersApi->getMarketplaceParticipations: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```

@@ -45,7 +45,8 @@ try {
     $result = $apiInstance->getCatalogItem($marketplace_id, $asin);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling CatalogApi->getCatalogItem: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -111,7 +112,8 @@ try {
     $result = $apiInstance->listCatalogCategories($marketplace_id, $asin, $seller_sku);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling CatalogApi->listCatalogCategories: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -183,7 +185,8 @@ try {
     $result = $apiInstance->listCatalogItems($marketplace_id, $query, $query_context_id, $seller_sku, $upc, $ean, $isbn, $jan);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling CatalogApi->listCatalogItems: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```

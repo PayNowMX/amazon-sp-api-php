@@ -50,7 +50,8 @@ try {
     $result = $apiInstance->getOrderMetrics($marketplace_ids, $interval, $granularity, $granularity_time_zone, $buyer_type, $fulfillment_network, $first_day_of_week, $asin, $sku);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling SalesApi->getOrderMetrics: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```

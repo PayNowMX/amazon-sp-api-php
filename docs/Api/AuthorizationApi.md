@@ -37,7 +37,8 @@ try {
     $result = $apiInstance->getAuthorizationCode($selling_partner_id, $developer_id, $mws_auth_token);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling AuthorizationApi->getAuthorizationCode: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```

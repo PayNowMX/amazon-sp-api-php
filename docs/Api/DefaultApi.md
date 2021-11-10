@@ -49,7 +49,8 @@ try {
     $result = $apiInstance->listFinancialEventGroups($max_results_per_page, $financial_event_group_started_before, $financial_event_group_started_after, $next_token);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling DefaultApi->listFinancialEventGroups: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -118,7 +119,8 @@ try {
     $result = $apiInstance->listFinancialEvents($max_results_per_page, $posted_after, $posted_before, $next_token);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling DefaultApi->listFinancialEvents: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -186,7 +188,8 @@ try {
     $result = $apiInstance->listFinancialEventsByGroupId($event_group_id, $max_results_per_page, $next_token);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling DefaultApi->listFinancialEventsByGroupId: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -253,7 +256,8 @@ try {
     $result = $apiInstance->listFinancialEventsByOrderId($order_id, $max_results_per_page, $next_token);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling DefaultApi->listFinancialEventsByOrderId: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```

@@ -51,7 +51,8 @@ try {
     $result = $apiInstance->cancelFulfillmentOrder($seller_fulfillment_order_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling FbaOutboundApi->cancelFulfillmentOrder: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -114,7 +115,8 @@ try {
     $result = $apiInstance->createFulfillmentOrder($body);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling FbaOutboundApi->createFulfillmentOrder: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -178,7 +180,8 @@ try {
     $result = $apiInstance->createFulfillmentReturn($body, $seller_fulfillment_order_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling FbaOutboundApi->createFulfillmentReturn: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -242,7 +245,8 @@ try {
     $result = $apiInstance->getFulfillmentOrder($seller_fulfillment_order_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling FbaOutboundApi->getFulfillmentOrder: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -305,7 +309,8 @@ try {
     $result = $apiInstance->getFulfillmentPreview($body);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling FbaOutboundApi->getFulfillmentPreview: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -368,7 +373,8 @@ try {
     $result = $apiInstance->getPackageTrackingDetails($package_number);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling FbaOutboundApi->getPackageTrackingDetails: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -433,7 +439,8 @@ try {
     $result = $apiInstance->listAllFulfillmentOrders($query_start_date_time, $fulfillment_method, $next_token);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling FbaOutboundApi->listAllFulfillmentOrders: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -501,7 +508,8 @@ try {
     $result = $apiInstance->listReturnReasonCodes($seller_sku, $language, $marketplace_id, $seller_fulfillment_order_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling FbaOutboundApi->listReturnReasonCodes: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -568,7 +576,8 @@ try {
     $result = $apiInstance->updateFulfillmentOrder($body, $seller_fulfillment_order_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling FbaOutboundApi->updateFulfillmentOrder: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```

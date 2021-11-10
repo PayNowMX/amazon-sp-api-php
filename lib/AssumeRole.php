@@ -66,16 +66,16 @@ class AssumeRole
         $host = 'sts.amazonaws.com';
         $uri = '/';
         $signedHeader = [];
-//        [
-//            'service' => 'sts',
-//            'accessKey' => $this->config->getApiKey('access_key'),
-//            'secretKey' => $this->config->getApiKey('secret_key'),
-//            'region' => 'us-east-1', // Global STS region
-//            'host' => $host,
-//            'uri' => $uri,
-//            'payload' => \GuzzleHttp\Psr7\build_query($requestOptions['form_params']),
-//            'method' => 'POST',
-//        ]
+        //        [
+        //            'service' => 'sts',
+        //            'accessKey' => $this->config->getApiKey('access_key'),
+        //            'secretKey' => $this->config->getApiKey('secret_key'),
+        //            'region' => 'us-east-1', // Global STS region
+        //            'host' => $host,
+        //            'uri' => $uri,
+        //            'payload' => \GuzzleHttp\Psr7\build_query($requestOptions['form_params']),
+        //            'method' => 'POST',
+        //        ]
         try {
             $signedHeader = Signature::calculateSignatureForService(
                 $host,
@@ -92,7 +92,7 @@ class AssumeRole
                 'cs-php-sp-api-client/2.1'
             );
         } catch (\Exception $e) {
-            echo "Error (Signing process) : {$e->getMessage()}";
+            // Handle exception
             throw $e;
         }
 
@@ -107,11 +107,11 @@ class AssumeRole
 
             $json = json_decode($response->getBody(), true);
             $credentials = $json['AssumeRoleResponse']['AssumeRoleResult']['Credentials'] ?? null;
-//            $tokens = [
-//                'access_key' => $credentials['AccessKeyId'],
-//                'secret_key' => $credentials['SecretAccessKey'],
-//                'session_token' => $credentials['SessionToken']
-//            ];
+            //            $tokens = [
+            //                'access_key' => $credentials['AccessKeyId'],
+            //                'secret_key' => $credentials['SecretAccessKey'],
+            //                'session_token' => $credentials['SessionToken']
+            //            ];
 
             return new AssumeRole(
                 $credentials['AccessKeyId'],
@@ -119,9 +119,9 @@ class AssumeRole
                 $credentials['SessionToken']
             );
 
-//            return $tokens;
+            //            return $tokens;
         } catch (\Exception $e) {
-            echo "Error (Signing process) : {$e->getMessage()}";
+            // Handle exception
             throw $e;
         }
     }

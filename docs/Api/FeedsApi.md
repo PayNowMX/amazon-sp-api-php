@@ -47,7 +47,8 @@ try {
     $result = $apiInstance->cancelFeed($feed_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling FeedsApi->cancelFeed: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -109,7 +110,8 @@ try {
     $result = $apiInstance->createFeed($body);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling FeedsApi->createFeed: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -171,7 +173,8 @@ try {
     $result = $apiInstance->createFeedDocument($body);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling FeedsApi->createFeedDocument: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -233,7 +236,8 @@ try {
     $result = $apiInstance->getFeed($feed_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling FeedsApi->getFeed: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -295,7 +299,8 @@ try {
     $result = $apiInstance->getFeedDocument($feed_document_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling FeedsApi->getFeedDocument: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -363,7 +368,8 @@ try {
     $result = $apiInstance->getFeeds($feed_types, $marketplace_ids, $page_size, $processing_statuses, $created_since, $created_until, $next_token);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling FeedsApi->getFeeds: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```

@@ -48,7 +48,8 @@ try {
     $result = $apiInstance->addAppointmentForServiceJobByServiceJobId($body, $service_job_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ServiceApi->addAppointmentForServiceJobByServiceJobId: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -112,7 +113,8 @@ try {
     $result = $apiInstance->cancelServiceJobByServiceJobId($service_job_id, $cancellation_reason_code);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ServiceApi->cancelServiceJobByServiceJobId: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -175,7 +177,8 @@ try {
     $result = $apiInstance->completeServiceJobByServiceJobId($service_job_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ServiceApi->completeServiceJobByServiceJobId: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -237,7 +240,8 @@ try {
     $result = $apiInstance->getServiceJobByServiceJobId($service_job_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ServiceApi->getServiceJobByServiceJobId: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -311,7 +315,8 @@ try {
     $result = $apiInstance->getServiceJobs($marketplace_ids, $service_order_ids, $service_job_status, $page_token, $page_size, $sort_field, $sort_order, $created_after, $created_before, $last_updated_after, $last_updated_before, $schedule_start_date, $schedule_end_date);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ServiceApi->getServiceJobs: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -387,7 +392,8 @@ try {
     $result = $apiInstance->rescheduleAppointmentForServiceJobByServiceJobId($body, $service_job_id, $appointment_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ServiceApi->rescheduleAppointmentForServiceJobByServiceJobId: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```

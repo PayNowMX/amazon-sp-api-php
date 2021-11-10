@@ -60,7 +60,8 @@ try {
     $result = $apiInstance->confirmPreorder($shipment_id, $need_by_date, $marketplace_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling FbaInboundApi->confirmPreorder: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -124,7 +125,8 @@ try {
     $result = $apiInstance->confirmTransport($shipment_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling FbaInboundApi->confirmTransport: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -187,7 +189,8 @@ try {
     $result = $apiInstance->createInboundShipment($body, $shipment_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling FbaInboundApi->createInboundShipment: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -250,7 +253,8 @@ try {
     $result = $apiInstance->createInboundShipmentPlan($body);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling FbaInboundApi->createInboundShipmentPlan: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -312,7 +316,8 @@ try {
     $result = $apiInstance->estimateTransport($shipment_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling FbaInboundApi->estimateTransport: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -374,7 +379,8 @@ try {
     $result = $apiInstance->getBillOfLading($shipment_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling FbaInboundApi->getBillOfLading: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -438,7 +444,8 @@ try {
     $result = $apiInstance->getInboundGuidance($marketplace_id, $seller_sku_list, $asin_list);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling FbaInboundApi->getInboundGuidance: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -507,7 +514,8 @@ try {
     $result = $apiInstance->getLabels($shipment_id, $page_type, $label_type, $number_of_packages, $package_labels_to_print, $number_of_pallets);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling FbaInboundApi->getLabels: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -575,7 +583,8 @@ try {
     $result = $apiInstance->getPreorderInfo($shipment_id, $marketplace_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling FbaInboundApi->getPreorderInfo: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -640,7 +649,8 @@ try {
     $result = $apiInstance->getPrepInstructions($ship_to_country_code, $seller_sku_list, $asin_list);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling FbaInboundApi->getPrepInstructions: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -708,7 +718,8 @@ try {
     $result = $apiInstance->getShipmentItems($query_type, $marketplace_id, $last_updated_after, $last_updated_before, $next_token);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling FbaInboundApi->getShipmentItems: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -775,7 +786,8 @@ try {
     $result = $apiInstance->getShipmentItemsByShipmentId($shipment_id, $marketplace_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling FbaInboundApi->getShipmentItemsByShipmentId: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -844,7 +856,8 @@ try {
     $result = $apiInstance->getShipments($query_type, $marketplace_id, $shipment_status_list, $shipment_id_list, $last_updated_after, $last_updated_before, $next_token);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling FbaInboundApi->getShipments: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -912,7 +925,8 @@ try {
     $result = $apiInstance->getTransportDetails($shipment_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling FbaInboundApi->getTransportDetails: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -975,7 +989,8 @@ try {
     $result = $apiInstance->putTransportDetails($body, $shipment_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling FbaInboundApi->putTransportDetails: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -1039,7 +1054,8 @@ try {
     $result = $apiInstance->updateInboundShipment($body, $shipment_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling FbaInboundApi->updateInboundShipment: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -1102,7 +1118,8 @@ try {
     $result = $apiInstance->voidTransport($shipment_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling FbaInboundApi->voidTransport: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```

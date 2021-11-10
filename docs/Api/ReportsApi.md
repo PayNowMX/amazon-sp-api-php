@@ -50,7 +50,8 @@ try {
     $result = $apiInstance->cancelReport($report_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ReportsApi->cancelReport: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -112,7 +113,8 @@ try {
     $result = $apiInstance->cancelReportSchedule($report_schedule_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ReportsApi->cancelReportSchedule: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -174,7 +176,8 @@ try {
     $result = $apiInstance->createReport($body);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ReportsApi->createReport: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -236,7 +239,8 @@ try {
     $result = $apiInstance->createReportSchedule($body);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ReportsApi->createReportSchedule: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -298,7 +302,8 @@ try {
     $result = $apiInstance->getReport($report_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ReportsApi->getReport: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -360,7 +365,8 @@ try {
     $result = $apiInstance->getReportDocument($report_document_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ReportsApi->getReportDocument: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -422,7 +428,8 @@ try {
     $result = $apiInstance->getReportSchedule($report_schedule_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ReportsApi->getReportSchedule: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -484,7 +491,8 @@ try {
     $result = $apiInstance->getReportSchedules($report_types);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ReportsApi->getReportSchedules: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
@@ -552,7 +560,8 @@ try {
     $result = $apiInstance->getReports($report_types, $processing_statuses, $marketplace_ids, $page_size, $created_since, $created_until, $next_token);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ReportsApi->getReports: ', $e->getMessage(), PHP_EOL;
+    // Handle exception
+    throw $e;
 }
 ?>
 ```
